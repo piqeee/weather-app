@@ -6,6 +6,7 @@ import React, { createContext, useContext, useState } from 'react';
 
 export const DataProvider = ({children}) => {
     const [export_data, setExportData] = useState(null);
+    console.log(process.env)
 
     return (
         <DataContext.Provider value={{export_data, setExportData}}>
